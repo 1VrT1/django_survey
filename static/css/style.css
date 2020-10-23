@@ -1,0 +1,22 @@
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  color: #465457;
+}
+
+.message-h {
+  display: table;
+  width: auto;
+  margin: 0 auto;
+  padding: 15px;
+  letter-spacing: 2px;
+  background: #cbdcea;
+  border: 2px dashed white;
+  color: white;
+  box-shadow: 0 0 0 4px #cbdcea;
+}

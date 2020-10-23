@@ -1,0 +1,10 @@
+.idea
+*.pyc
+*~
+__pycache__
+include
+Lib
+Scripts
+db.sqlite3
+.DS_Store
+pyvenv.cfg

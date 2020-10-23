@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load polls_tags %}
+
+{% block content %}
+    <div class="container">
+        {% if message %}
+            <h3 class="message-h mt-5 text-center">{{ message }}</h3>
+        {% else %}
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    {{ formset.management_form }}
+                    {% for form in formset %}
+                        <h3>{{ questions|index:forloop.counter0 }}</h3>
+                        {{ form.answer }}
+                    {% endfor %}
+                    <button type="submit" value="save" class="btn btn-lg btn-secondary mt-3 ml-3">Отправить</button>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}

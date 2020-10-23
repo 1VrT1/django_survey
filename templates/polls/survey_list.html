@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container text-center">
+    <div class="mt-5">
+        {% for survey in survey_list %}
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong><a href="{{ survey.get_absolute_url }}"> {{ survey.title }} </a></strong>
+                </li>
+            </ul>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
